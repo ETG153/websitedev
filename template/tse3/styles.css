@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1e9e9;
+}
+  /*logon muotoilut*/
+  #home { 
+   float: left;
+    width: 50px;
+    height: 60px;
+    margin-left: 50px;
+  margin-right: 10px;
+  }
+  #a-home, #a-home:hover{  /*logon muotoilua*/
+float: left;
+background-color:rgb(77, 126, 164) ;
+
+  }
+  #a-heading:hover,#a-heading:active,#a-heading:link, #a-heading:visited { /* blogi otsikoiden linkkimuotoilut*/
+      text-decoration: none;
+      color: inherit;
+    }
+  /*sivupalkin linkkien muotoulut*/
+    #a-side{       
+    text-decoration: underline;
+    color: inherit;
+  } 
+  #a-side:hover{
+    
+    color:blue; 
+     
+  }
+
+  #a-side:active{
+    
+    color: inherit;
+    text-decoration: underline;
+
+  }
+/*Container1 otsake alueen muotoilut*/
+.container1{width:100%; text-align: center; padding-top: 50px !important; padding-right: 90px; margin: 0;}
+.container1-posts{width:100%; text-align: center; padding-top: 50px;padding-right: 0; margin: 0;}
+
+/* Content sisältöalueen muotoilut */
+.content {
+    background-color: #ddd;
+    padding: 1px;
+  margin-left:50px ;
+ 
+  }
+.content-posts{
+  margin: 0;
+ padding: 0;
+  background-color: #ddd;
+}
+
+/* topnavin muotoilut*/
+.topnav {
+ position: fixed;
+  overflow: hidden;
+  background-color: rgb(77, 126, 164);
+}
+ /*topnavin palikoiden muotoilut*/
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(62, 142, 207);
+  color: white;
+}
+/* hakukentän muotoilut*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(62, 142, 207);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+ /* Pienille näytöille: */
+@media screen and (max-width: 603px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  .topnav {width: 100%;}
+  .content{width:100%;}
+.container2{width:100%;}
+.container1{width:100%; margin-top: 300px;}
+}
+
+/*puhelimille*/
+
+[class*="col-"] {
+    
+    width: 100% !important;                                         
+}  
+/* Tableteille: */
+  @media only screen and (max-width: 700px) {
+    .topnav {width: 100%;}
+    .content{ padding: 0px; margin: 0px; width: 100%; margin: 0;
+      padding: 0; }
+  .container1{width:100%; text-align: center; padding-top: 150px !important; padding-right: 90px; margin: 0;}   
+  .container1-posts{width:100%; text-align: center; padding-top: 50px;padding-right: 0; margin: 0;}                  /*TÄNNE PADDING*/
+  .container{ padding: 0; margin: 0; width: 100% !important;}
+.center{ padding:0;margin: 0; width: 100% !important; }
+.center2{width:100%;}
+
+}
+    /* Pöytäkoneille ja kannettaville: */
+  @media only screen and (min-width: 768px) {
+  
+    .topnav {width: 100%;}
+    .content{width:100%; }
+    .center{ padding: 0;margin: 0; width: 100%; }
+    
+  }
+  
+  /* When the screen is less than 603px wide, stack the links and the search field vertically instead of horizontally */
+  @media only screen and (max-width: 603px) {
+    .topnav a, .topnav input[type=text], .center2, .center, .footer  {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100% !important; 
+      padding: 14px;
+
+    }
+    
+    .topnav a.center2{  
+text-align: center;
+margin: 10px;
+}.sidebar { margin-top: 215px !important;}  
+.container1{ margin-top: 300px; padding-right: 100px;}
+.container1-posts{ margin-top: 200px !important; padding-right: 0px;}
+
+  }
+    
+/*sisältö alueen muotoilut*/
+  .container{
+  text-align:left;
+    width:100%;
+    border:none;
+    padding: 50px;
+  
+  }
+
+  .container1{    /* otsake sisältöalueen muotoilut  */
+    text-align: center;
+      width:100%;
+      border:none;
+      margin-left:50px;
+ margin-top: 100px !important;
+    }
+    .container1-posts{ /*Post sivun otsake muotoilut*/
+      margin:0;
+
+    }
+/*side navin muotoilut*/
+
+/* The side navigation menu */
+.sidebar {
+  text-align: left;
+margin-top: 42px;
+  margin-left: -50px;
+  width: 200px;
+  background-color: rgb(194, 190, 190);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+ 
+}
+
+/* Sidebar linkit */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Aktiivinen/ valittu linkki */
+.sidebar a.active {
+  background-color: #4991d4;
+  color: white;
+}
+
+/* Linkit kun hiiri on päällä */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+
+  }
+  .sidebar a {float: left;}
+  .content {margin-left: 0;}
+.center{width: 100%;}
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+  
+  }
+  
+}
+  .center {
+      background-color: whitesmoke; /* Keskitetty laatikko jossa blogi postaukset*/
+    height: fit-content;
+    margin: auto;
+    width: 50%;
+    border: 1px solid rgb(0, 0, 0);
+   border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;  
+text-align: left;
+}
+
+/*posts sivun post-laatikoiden muotoilu*/
+
+#join{
+  float: right;
+  margin-top: 10px;
+  margin-right:10px;
+  }
+
+#login{
+float: right;
+margin-top: 10px;
+margin-right:10px;
+}
+
+.button {
+  background-color: #008CBA; /* Kommentiointipainikeen muotoilu */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 10px;
+
+}
+
+.button:hover {
+  background-color: rgb(48, 112, 165);
+  
+}
+
+/*search barin muotoilut*/
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+ 
+}
+
+/* Kolumnien muotoilut */
+
+/*Poistaa floatit*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+  padding-left: 200px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ddd;
+  padding-left: 20px;
+  padding-right: 20px;
+text-align: left;
+}
+
+/* Fake image  */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  
+}
+/*yksittäisen postin koko omalla sivulla*/
+#postcard{
+height: auto;
+
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 920px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 920px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .topnav {width: 100%;}
+  
+}
+
+
