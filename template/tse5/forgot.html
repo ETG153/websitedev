@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TSE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="Logo v2.png"> <!-- Sivun yläosan logo kuvake joka näkyy välilehdessä -->
+<script src="script.js"></script><!--Ulkoinen javascript tiedosto -->
+</head>
+<body>
+  
+  <div class="topnav" id="myTopnav"> <!-- Responsiivinen top nav -->
+    <div class="logo"><a href="index.html" id="a-home"><img src="Logo v2.png" id="home" alt="TSE logo" width="40px" height="60px"></a> </div> 
+     <a id="toplogin" href="login.html" target="_blank">Login</a>
+   <a  id ="topmyprofile" href="profile.html" target="_blank">My profile</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   <i onclick="my2Function(this)" class="fa fa-arrow-down"></i>  </a> <!--Topnavin avaus ja sulkemis painike nuolilla -->
+   <a><div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>   
+    </div></a>
+  </div>
+  
+  <div class="container">  <!-- Index sivun sisältöcontaineri-->
+   
+<!-- The sidebar collapse avattava ja suljettava -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="posts.html">Posts</a>
+  <a href="privacy.html">Privacy policy</a>
+
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+
+</div>
+
+<div class="center center-join">
+    <h2>Forgot pass word</h2>     <!--Unoihtuiko salasana lomake -->
+   
+    <form method="post" action="send_link.php">
+        <p>Enter Email Address To Send Password Link</p>
+        <input type="email"id="sendmail" name="email">
+        <input type="submit" value="Submit" name="submit_email">
+      </form>
+   
+  </div>
+</div>
+ 
+ <div class="footer">
+   
+    <p>Footer</p>
+</div>       
+      
+</div>
+</body>
+</html>
+
+

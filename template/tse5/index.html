@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TSE</title> <!--Title joka on välilehden otsikko -->
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css"><!--Ulkoisen css tiedoston linkki -->
+<link rel="icon" type="image/x-icon" href="Logo v2.png"> <!-- Sivun yläosan logo kuvake joka näkyy välilehdessä -->
+<script src="script.js"></script><!--Ulkoinen javascript tiedosto -->
+</head>
+<body>
+ 
+
+  <div class="topnav" id="myTopnav"> <!-- Responsiivinen top nav  uusi-->
+    <div class="logo"><a href="index.html" id="a-home"><img src="Logo v2.png" id="home" alt="TSE logo" width="40px" height="60px"></a> </div> <!-- logo jossa linkki etusivulle -->
+    <a id="toplogin" href="login.php" target="_blank">Login</a> <!-- login linkki sisäänkirjautumisssivulle -->
+    <a  id ="topmyprofile" href="profile.php" target="_blank">My profile</a> <!--My profile linkki profiiliin  -->
+    <a id="arrow" href="javascript:void(0);" class="icon" onclick="myFunction()"> <!--navbarin responsiivinen toiminto linkki ja nuolen suunnan vaihto funktio  -->
+      <i onclick="my2Function(this)" class="fa fa-arrow-down"></i>
+    </a> 
+    <a> <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>   
+    </div></a>
+  </div>
+   
+  <div class="container">  <!-- Index sivun sisältöcontaineri-->
+   
+<!-- The sidebar collapse avattava ja suljettava -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</i></a>
+  <a href="index.html">Home</a>
+  <a href="posts.html">Posts</a>
+  <a href="privacy.html">Privacy policy</a>
+
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  
+</div>
+
+<div class="container1"> <!-- Otsake containeri-->
+
+  <h1>TSE</h1>
+<h2>Totally Safe electronics</h2> 
+
+</div>
+ 
+<div class="content" id="content"><!--Sisältöalue jossa blogin sisältölaatikot-->
+  
+
+<h2>Blog tamplate</h2>
+  <p>Content area.</p>
+  
+ 
+  <div class="center"><!--Blogin postaukset laatikoissa ja napit-->
+    <h2> HEADING1</h2>
+    <h5>Title description, Dec 7, 2022</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    
+    <p>Täältä neat osan tekstistä ja voit lukea lisää aiheesta </p>
+    <p> ja voit lukea lisää aiheesta </p>
+    <p> ja voit lukea lisää aiheesta   </p> 
+   <a href="post1.php" class="button">Read more...</a> <!--Etusivun readmore, joka näyttää koko postauksen painettaessa-->
+   <div>
+    
+  </div>
+ 
+  <a href="post1.html" class="button">Comment</a>  <!--Kommentointipainike joka avaa kommenttikentän-->
+
+</div>
+<div class="center">
+  <h2> HEADING2</h2>  
+  <h5>Title description, Dec 7, 2020</h5>
+  <div class="fakeimg" style="height:200px;">Image</div>
+  <p>Täältä näet koko postauksen ja voit lukea lisää aiheesta </p>
+  <p>Täältä näet koko postauksen ja voit lukea lisää aiheesta </p>
+  <p>Täältä näet koko postauksen ja voit lukea lisää aiheesta </p>
+  <a href="post2.html" class="button">Read more...</a> <!--Etusivun readmore, joka näyttää koko postauksen painettaessa-->
+  <a href="post2.html" class="button">Comment</a>  <!--Kommentointipainike joka avaa kommenttikentän-->
+  
+
+    </div>
+    <div class="center">
+  <h2> HEADING3</h2>
+ <h5>Title description, Dec 7, 2019</h5>
+ <div class="fakeimg" style="height:200px;">Image</div>
+ <p>Täältä  ja voit lukea lisää aiheesta </p>
+ <p>Täältä  ja voit lukea lisää aiheesta </p>
+ <p>Täältä  ja voit lukea lisää aiheesta </p>
+ 
+ <p>Mitä täällä voisi sanoa käyttäjille. Terve vaan yhteisön jäsenille.Tänne  voi kirjoittaa kontenttia. </p>
+ <p>Lorem ipsumia. </p> 
+ <a href="post3.html" class="button">Read more...</a>       <!--Etusivun readmore, joka näyttää koko postauksen painettaessa-->
+ <a href="post3.html" class="button">Comment</a>  <!--Kommentointipainike joka avaa kommenttikentän-->
+         
+        </div>
+ <div class="center">
+  <h2> HEADING4</h2>
+  <h5>Title description, Dec 7, 2018</h5>
+  <div class="fakeimg" style="height:200px;">Image</div>
+  <p>Täältä näet osan postauksesta ja voit lukea lisää aiheesta </p>
+  <p>Täältä näet  osan postauksesta ja voit lukea lisää aiheesta </p>
+  <p>Täältä näet  osan postauksesta ja voit lukea lisää aiheesta </p>
+  <a href="post4.html" class="button">Read more...</a> <!--Etusivun readmore, joka näyttää koko postauksen painettaessa-->
+  <a href="post4.html" class="button">Comment</a>  <!--Kommentointipainike joka avaa kommenttikentän-->
+        </div>
+ <div class="footer">
+   
+    <p>Footer</p>
+</div>       
+      
+</div>
+</body>
+</html>
+
+
