@@ -16,4 +16,4 @@ This software structure is designed to have public html side which is shown to t
 
 ### Installation
 
-Before installation it is requred to have maria db or my sql database. Installing sql to database is possible frm sql file users can import tables from sql file to mariadb or mysql database. You must also have a domain and connect database with domain. It is also required to include all code files and folders to domain. You can find more information and guidance from your domain webhotel. 
+Before installation it is required to have maria db or my sql database. Installing sql to database is possible from sql file. Users can import tables from sql file to mariadb or mysql database. You must also have a domain and connect database with domain. It is also required to include all code files and folders to domain. You can find more information and guidance from your  webhotel. 
